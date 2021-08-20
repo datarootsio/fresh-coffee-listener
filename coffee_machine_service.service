@@ -1,0 +1,20 @@
+# systemd unit file for the Python Service
+[Unit]
+
+# Human readable name of the unit
+Description=Coffee machine counter
+
+
+[Service]
+# TODO: change user
+User=pi
+# Command to execute when the service is started
+# TODO: change the path to the project directory
+WorkingDirectory= /home/pi/coffee-machine-monitoring
+ExecStart=make run
+
+# Automatically restart the service if it crashes
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

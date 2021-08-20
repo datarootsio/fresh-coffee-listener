@@ -1,0 +1,20 @@
+# systemd unit file for the systemd Service
+[Unit]
+
+# Human readable name of the unit
+Description=Coffee machine counter timer
+
+[Timer]
+# Run service everyday at 7 AM
+OnCalendar=Mon..Fri 07:00
+
+# If we need to run it in the middle of the day (e.g. power outage) then also run it
+Persistent=true
+
+Unit=coffee_machine_service.service
+
+[Install]
+
+# Tell systemd to automatically start this service when the system boots
+# (assuming the service is enabled)
+WantedBy=timers.target
