@@ -6,6 +6,7 @@
 A typical datarootsian consumes high-quality fresh coffee in their office environment. The board of dataroots had
 a very critical decision by the end of 2021-Q2 regarding coffee consumption. From now on, the total number of coffee
 consumption stats have to be audited live via listening to the coffee grinder sound in Raspberry Pi, because why not? 
+Check stats from [here](https://app.cumul.io/s/coffeeometer-lejpayjm3rdjgtiu).
 
 ## Overall flow to collect coffee machine stats
 1. Relocate the Raspberry Pi microphone just next to the coffee machine
